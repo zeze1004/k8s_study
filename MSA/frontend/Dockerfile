@@ -9,7 +9,8 @@ RUN mkdir /app
 WORKDIR /app 
 
 # 빌드된 산출물 도커 이미지로 복사 
-RUN mkdir ./build COPY ./build ./build 
+RUN mkdir ./build 
+COPY ./build ./build 
 
 # 실행 명령어 
 ENTRYPOINT ["serve", "-s", "build"]
