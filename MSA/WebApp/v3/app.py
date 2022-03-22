@@ -9,7 +9,7 @@ app = Flask(__name__)
 @app.route("/")
 def main():
     currentDT = datetime.datetime.now()
-    return "Welcome user! current time is " + str(currentDT)
+    return "ZEZE LOVE current time is " + str(currentDT)
 
 @app.route("/health")
 def health():
